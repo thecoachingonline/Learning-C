@@ -2,8 +2,5 @@
 
 int main(void)
 {
-    
-    printf("สวัสดี ชาวโลก\n");
-
-    return 0;
+    printf("สวัสดี, ชาวโลก\n");
 }
