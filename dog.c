@@ -1,14 +1,16 @@
 #include <stdio.h>
 
-void dog(void)
-{
-    printf("dog\n");
-}
+void dog(int n);
 
 int main(void)
 {
-    for (int i = 0; i < 3; i+9)
+    dog(3000);
+}
+
+void dog(int n)
+{
+    for (int i = 0; i < n; i++)
     {
-        dog();
+        printf("dog\n");
     }
 }
