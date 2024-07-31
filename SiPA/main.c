@@ -2,6 +2,11 @@
 #include "calc.h"
 
 int main() {
+
+    char myGreade;
+    myGreade = 'A'
+    printf("Your grade is %c", myGreade);
+
     printf("%d", plus(1,2));
     return 0;
 
