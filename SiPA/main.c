@@ -31,10 +31,26 @@ int main() {
    printf("%c", s[0]);
    printf("%s", s);
    */
-  // การอ่านข้อมูจากคีย์อร์ด
+  /* การอ่านข้อมูจากคีย์อร์ด
   char c1, c2;
   char c1, s1[10];
   scanf("%c%c", &c1, &c2);
   scanf("%c%s" , &c1, s1);
+  */
+  // ข้อมูลตัวอกษรและตัวเลข
+   char n1 = '2';
+   char n2 = '5';
+   int n = 1;
+   printf("%c", n1 + n2);
+   int n;
+   scanf("%d", n);
+   int n = 20;
+   printf("I'm %d years old", n);
+   char c1 = 'A';
+   printf("Otput is %c", c1 + 1);
+   char c2 = 'C';
+   printf("Otput is %c", c2 - 2);
+   char c3 = 'C';
+   printf("Output is %d", c3 - 'A');
 
 }
