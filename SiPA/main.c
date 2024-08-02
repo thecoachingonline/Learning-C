@@ -92,7 +92,7 @@ int main() {
    printf("d1 = %8lf\n", 2.0 * d1);
    printf("d2 = %.8lf", 2.0 * d2);
    */
-   //Type casting
+   /* Type casting
    int visitor = 5;
    int day = 2;
    float f = visitor/day;
@@ -101,5 +101,12 @@ int main() {
    float f = visitor/(float)day;
    float f = (float)visitor/(float)day;
    printf("visior/day = %.2f", f);
+   return 0;
+   */
+   // การดำเนินการกับไฟล์
+   FILE *fOut;
+   fOut = fopen("test.txt", "w");
+   fprintf(fOut, "I'm %d years old", 20);
+   fclose(fOut);
    return 0;
 }
