@@ -69,7 +69,7 @@ int main() {
    printf("%u", n1 + n2);
    return 0;
    */
-   // ตัวเลขทศนิยม
+   /* ตัวเลขทศนิยม
    float pi = 3.14;
    float n;
    scanf("%f", &n);
@@ -80,5 +80,16 @@ int main() {
    float r = 2.5;
    printf("%f", pi*r*r);
    printf("%.3f", pi*r*r);
-   
+   */
+   // Precision error
+   float f1 = 3.1234567;
+   float f2 = 3.1234568;
+   printf("f1 = %.8f\n", 2.0 * f1);
+   printf("f2 = %.8f", 2.0 * f2);
+
+   double d1 = 3.1234567;
+   double d2 = 3.1234568;
+   printf("d1 = %8lf\n", 2.0 * d1);
+   printf("d2 = %.8lf", 2.0 * d2);
+
 }
