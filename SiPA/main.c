@@ -37,7 +37,7 @@ int main() {
   scanf("%c%c", &c1, &c2);
   scanf("%c%s" , &c1, s1);
   */
-  // ข้อมูลตัวอกษรและตัวเลข
+  /* ข้อมูลตัวอกษรและตัวเลข
    char n1 = '2';
    char n2 = '5';
    int n = 1;
@@ -52,5 +52,14 @@ int main() {
    printf("Otput is %c", c2 - 2);
    char c3 = 'C';
    printf("Output is %d", c3 - 'A');
-
+   */
+   // ตัวดำเนินการพีซคณิต
+   printf("%d", 20 + 30);
+   printf("%d", 20 - 30);
+   printf("%d", 20 * 30);
+   printf("%d", 20 / 4);
+   printf("%d", 13 % 8);
+   printf("%d", -14 % 8);
+   printf("%d", (2 * (5 + 4)));
+   printf("%d", 1 + 3 - 6 / 2 * (2 + 1));
 }
