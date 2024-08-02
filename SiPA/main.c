@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include "calc.h"
+#include<stdlib.h>
+#include<string.h>
 
 int main() {
     /* ตัวแปร
@@ -103,10 +105,21 @@ int main() {
    printf("visior/day = %.2f", f);
    return 0;
    */
-   // การดำเนินการกับไฟล์
+   /* การดำเนินการกับไฟล์
    FILE *fOut;
    fOut = fopen("test.txt", "w");
    fprintf(fOut, "I'm %d years old", 20);
    fclose(fOut);
    return 0;
+   */
+  /* Boolan expression
+  fabs(a - 3.5) < 0.000001
+
+  strcmp("ant", "cat");
+  strcmp("cat", "cat");
+  strcmp("zbra", "cat");
+
+  strcmp(h, "hello")== 0
+  */
+  // ตัวดำเนิการตรรกศาสตร์
 }
