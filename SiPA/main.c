@@ -81,7 +81,7 @@ int main() {
    printf("%f", pi*r*r);
    printf("%.3f", pi*r*r);
    */
-   // Precision error
+   /* Precision error
    float f1 = 3.1234567;
    float f2 = 3.1234568;
    printf("f1 = %.8f\n", 2.0 * f1);
@@ -91,5 +91,15 @@ int main() {
    double d2 = 3.1234568;
    printf("d1 = %8lf\n", 2.0 * d1);
    printf("d2 = %.8lf", 2.0 * d2);
-
+   */
+   //Type casting
+   int visitor = 5;
+   int day = 2;
+   float f = visitor/day;
+   float f = (float)visitor/day;
+   float f = ((float)visitor)/day;
+   float f = visitor/(float)day;
+   float f = (float)visitor/(float)day;
+   printf("visior/day = %.2f", f);
+   return 0;
 }
