@@ -63,9 +63,22 @@ int main() {
    printf("%d", (2 * (5 + 4)));
    printf("%d", 1 + 3 - 6 / 2 * (2 + 1));
    */
-   // Overflow
+   /* Overflow
    unsigned int n1 = 2147483647;
    unsigned int n2 = 1;
    printf("%u", n1 + n2);
    return 0;
+   */
+   // ตัวเลขทศนิยม
+   float pi = 3.14;
+   float n;
+   scanf("%f", &n);
+   float n = 3.14;
+   printf("pi = %f", n);
+
+   float pi = 3.1416;
+   float r = 2.5;
+   printf("%f", pi*r*r);
+   printf("%.3f", pi*r*r);
+   
 }
