@@ -147,5 +147,20 @@ int main() {
   if (score >= 50) {
     printf("You passed!\n");
   }
+  else{
+    printf("You failed!\n");
+  }
   printf("End");
+  if (score >= 80)
+  {
+    grade = 'a';
+  }
+  else if (score >= 70) {
+    grade = 'b';
+  }
+  else {
+    grade = 'c';
+  }
+  printf("Your grade is %c", grade);
+  
 }
