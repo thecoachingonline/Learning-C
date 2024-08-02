@@ -53,7 +53,7 @@ int main() {
    char c3 = 'C';
    printf("Output is %d", c3 - 'A');
    */
-   // ตัวดำเนินการพีซคณิต
+   /* ตัวดำเนินการพีซคณิต
    printf("%d", 20 + 30);
    printf("%d", 20 - 30);
    printf("%d", 20 * 30);
@@ -62,4 +62,10 @@ int main() {
    printf("%d", -14 % 8);
    printf("%d", (2 * (5 + 4)));
    printf("%d", 1 + 3 - 6 / 2 * (2 + 1));
+   */
+   // Overflow
+   unsigned int n1 = 2147483647;
+   unsigned int n2 = 1;
+   printf("%u", n1 + n2);
+   return 0;
 }
