@@ -121,7 +121,7 @@ int main() {
 
   strcmp(h, "hello")== 0
   */
-  // ตัวดำเนิการตรรกศาสตร์
+  /* ตัวดำเนิการตรรกศาสตร์
   int a = 15;
   (a > 10) && (a < 20);
 
@@ -141,5 +141,11 @@ int main() {
 
   char c = 'h';
   (c < 'a') || (c < 'b');
-
+  */
+  // ทางเลือกแบบ if
+  printf("Start\n");
+  if (score >= 50) {
+    printf("You passed!\n");
+  }
+  printf("End");
 }
