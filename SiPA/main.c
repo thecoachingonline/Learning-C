@@ -163,7 +163,7 @@ int main() {
   }
   printf("Your grade is %c", grade);
   */
-  // ทางเลือกแบบ Swich Case
+  /* ทางเลือกแบบ Swich Case
   switch(grade){
     case 'A' :
       printf("Exellen!\n" );
@@ -175,5 +175,14 @@ int main() {
       printf("Try harder nxt time\n" );
   }
   printf("Your grade is %c\n", grade);
-  
+  */
+  // การทำซ้ำ For
+  int i, j;
+  for (i = 2;i < 4;i++){
+    for (j = 2; j < 5; j++)
+    {
+      printf("%d x %d = %d\n", i, j, i*j);
+    }  
+  }
+  return 0; 
 }
