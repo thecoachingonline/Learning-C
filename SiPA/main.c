@@ -176,7 +176,7 @@ int main() {
   }
   printf("Your grade is %c\n", grade);
   */
-  // การทำซ้ำ For
+  /* การทำซ้ำ For
   int i, j;
   for (i = 2;i < 4;i++){
     for (j = 2; j < 5; j++)
@@ -184,5 +184,13 @@ int main() {
       printf("%d x %d = %d\n", i, j, i*j);
     }  
   }
-  return 0; 
+  return 0;
+  */
+  // การทำซ้ำ While
+  int i = 0;
+  while (i <= 10) {
+    printf("%d ", i);
+    i = i + 1;
+  }
+   
 }
