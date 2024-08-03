@@ -142,7 +142,7 @@ int main() {
   char c = 'h';
   (c < 'a') || (c < 'b');
   */
-  // ทางเลือกแบบ if
+  /* ทางเลือกแบบ if
   printf("Start\n");
   if (score >= 50) {
     printf("You passed!\n");
@@ -162,5 +162,18 @@ int main() {
     grade = 'c';
   }
   printf("Your grade is %c", grade);
+  */
+  // ทางเลือกแบบ Swich Case
+  switch(grade){
+    case 'A' :
+      printf("Exellen!\n" );
+      break;
+    case 'B' :
+      printf("Well doe\n" );
+      break;
+    default :
+      printf("Try harder nxt time\n" );
+  }
+  printf("Your grade is %c\n", grade);
   
 }
