@@ -2,6 +2,7 @@
 #include "calc.h"
 #include<stdlib.h>
 #include<string.h>
+#define PI 3.14
 
 int main() {
     /* ตัวแปร
@@ -186,11 +187,18 @@ int main() {
   }
   return 0;
   */
-  // การทำซ้ำ While
+  /* การทำซ้ำ While
   int i = 0;
   while (i <= 10) {
     printf("%d ", i);
     i = i + 1;
   }
-   
+  */
+   // ค่าคงที่
+   float area, circmference;
+   float radius = 5.0;
+   area = PI*radius*radius;
+   circmference= 2*PI*radius;
+   printf("area= %.2f, circumference = %.2f", area, circmference);
+   return 0; 
 }
