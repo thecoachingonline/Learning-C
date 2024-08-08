@@ -4,6 +4,12 @@
 #include<string.h>
 #define PI 3.14
 
+enum traffic_ligth {
+  RED,
+  GREEN,
+  YELLOW
+}
+
 int main() {
     /* ตัวแปร
     char myGreade;
@@ -194,11 +200,28 @@ int main() {
     i = i + 1;
   }
   */
-   // ค่าคงที่
+   /* ค่าคงที่
    float area, circmference;
    float radius = 5.0;
    area = PI*radius*radius;
    circmference= 2*PI*radius;
    printf("area= %.2f, circumference = %.2f", area, circmference);
-   return 0; 
+   */
+  // Enum
+  enum traffic_light color;
+  if (color == RED)
+  {
+    stop();
+  }
+  else if (color == GREEN)
+  {
+    go();
+  }
+  else if (color == YELLOW)
+  {
+    slow();
+  }
+  return 0;
+  
+
 }
