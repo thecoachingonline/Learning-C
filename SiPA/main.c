@@ -4,11 +4,17 @@
 #include<string.h>
 #define PI 3.14
 
-enum traffic_ligth {
+/* enum traffic_ligth {
   RED,
   GREEN,
   YELLOW
-}
+} */
+
+typedef enum traffic_ligth (
+  RED,
+  GREEN,
+  YELLOW
+) traffic_ligth;
 
 int main() {
     /* ตัวแปร
@@ -207,7 +213,7 @@ int main() {
    circmference= 2*PI*radius;
    printf("area= %.2f, circumference = %.2f", area, circmference);
    */
-  // Enum
+  /* Enum
   enum traffic_light color;
   if (color == RED)
   {
@@ -222,6 +228,21 @@ int main() {
     slow();
   }
   return 0;
+  */
+  // Typedef
+  struct account
+  {
+    char fn[100], ln[100];
+    float balance;
+  };
+  typedef struct account account;
+  
+  typedef struct account
+  {
+    char fn[100];
+    char ln[100];
+    float balance;
+  } account;
   
 
 }
