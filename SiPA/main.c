@@ -244,9 +244,16 @@ int main() {
     float balance;
   } account;
   */
-  // แถวลำดับ
+  /* แถวลำดับ
   char fist_name[100];
   int row[9];
   float score[50];
+  */
+  // แถวลำดับลายมิติ
+  score[5] = 10;
+  scanf("%d", &score[5]);
+  printf("%d", score[5]);
+
+  int table[3][3];
 
 }
