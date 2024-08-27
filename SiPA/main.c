@@ -229,7 +229,7 @@ int main() {
   }
   return 0;
   */
-  // Typedef
+  /* Typedef
   struct account
   {
     char fn[100], ln[100];
@@ -243,6 +243,10 @@ int main() {
     char ln[100];
     float balance;
   } account;
-  
+  */
+  // แถวลำดับ
+  char fist_name[100];
+  int row[9];
+  float score[50];
 
 }
