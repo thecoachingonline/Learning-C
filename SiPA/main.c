@@ -16,6 +16,9 @@ typedef enum traffic_ligth (
   YELLOW
 ) traffic_ligth;
 
+void* malloc(int size_in_byte);
+void free(void* memory_address);
+
 int main() {
     /* ตัวแปร
     char myGreade;
@@ -256,7 +259,7 @@ int main() {
 
   int table[3][3];
   */
-  // ตัวชี้
+  /* ตัวชี้
   int a;
   int *ptr_int;
   char *msg;
@@ -274,5 +277,22 @@ int main() {
   printf("a = %d\n", a);
   printf("ptr_int1 = %d\n", *ptr_int1);
   printf("ptr_int2 = %d", *ptr_int2);
+  */
+  // การจัดการหน่วยความจำ
+  char *ptr_char;
+  ptr_char = malloc(10*sizeof(char));
 
+  int *ptr_int;
+  ptr_int = malloc(20*sizeof(int));
+
+  int **ptr_ptr_int;
+  ptr_ptr_int= malloc(20*sizeof(int*));
+
+  ptr_int[3]= 10;
+  *(ptr_int + 3) = 10;
+
+  free(ptr_char);
+  free(ptr_int);
+  free(ptr_ptr_int);
+  
 }
