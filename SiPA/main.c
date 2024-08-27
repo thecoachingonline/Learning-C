@@ -249,11 +249,30 @@ int main() {
   int row[9];
   float score[50];
   */
-  // แถวลำดับลายมิติ
+  /* แถวลำดับลายมิติ
   score[5] = 10;
   scanf("%d", &score[5]);
   printf("%d", score[5]);
 
   int table[3][3];
+  */
+  // ตัวชี้
+  int a;
+  int *ptr_int;
+  char *msg;
+  float **f;
+  a = 10;
+  ptr_int = &a;
+  printf("%d\n", ptr_int);
+  printf("%d\n", *ptr_int);
+
+  int a, *ptr_int1, *ptr_int2;
+  a = 10;
+  ptr_int1 = &a;
+  ptr_int2 = &a;
+  *ptr_int2 = 20;
+  printf("a = %d\n", a);
+  printf("ptr_int1 = %d\n", *ptr_int1);
+  printf("ptr_int2 = %d", *ptr_int2);
 
 }
