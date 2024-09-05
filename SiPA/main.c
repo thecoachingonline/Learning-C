@@ -278,7 +278,7 @@ int main() {
   printf("ptr_int1 = %d\n", *ptr_int1);
   printf("ptr_int2 = %d", *ptr_int2);
   */
-  // การจัดการหน่วยความจำ
+  /* การจัดการหน่วยความจำ
   char *ptr_char;
   ptr_char = malloc(10*sizeof(char));
 
@@ -294,5 +294,30 @@ int main() {
   free(ptr_char);
   free(ptr_int);
   free(ptr_ptr_int);
-  
+  */
+  // โปรแกรมย่อย
+  int pow(int base, int expo) (
+    int i, result;
+    result = 1;
+    for (i = 0;i < expo;i++) {
+      result = result*base;
+    }
+    return result;
+  )
+  // แบบไม่คืนค่า
+  void print_border() {
+    int i;
+    for (i = 0;i < 9;i++) {
+      if (i%3 == 0) {
+        printf("+");
+      }
+      printf("-");
+    }
+    printf("+\n");
+  }
+  // เรียกใช้งาน
+  int exponent = 4;
+  print_border();
+  printf("%d\n", pow(2, exponent));
+  print_border();
 }
