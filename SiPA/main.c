@@ -295,7 +295,7 @@ int main() {
   free(ptr_int);
   free(ptr_ptr_int);
   */
-  // โปรแกรมย่อย
+  /* โปรแกรมย่อย
   int pow(int base, int expo) (
     int i, result;
     result = 1;
@@ -320,4 +320,16 @@ int main() {
   print_border();
   printf("%d\n", pow(2, exponent));
   print_border();
+  */
+  // Pass by Value / Pass reference by Vlue
+  void swap(int *a, int *b){
+    int temp;
+    temp = *a;
+    *a = *b;
+    *b = temp;
+  }
+  int c = 5, d = 3;
+  swap(&c, &d);
+  printf("c = %d, d = %d", c, d);
+  return 0;
 }
