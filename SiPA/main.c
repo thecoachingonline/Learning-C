@@ -19,6 +19,12 @@ typedef enum traffic_ligth (
 void* malloc(int size_in_byte);
 void free(void* memory_address);
 
+int global_var;
+
+void set_var(int n) {
+  global_var = n;
+}
+
 int main() {
     /* ตัวแปร
     char myGreade;
@@ -321,7 +327,7 @@ int main() {
   printf("%d\n", pow(2, exponent));
   print_border();
   */
-  // Pass by Value / Pass reference by Vlue
+  /* Pass by Value / Pass reference by Vlue
   void swap(int *a, int *b){
     int temp;
     temp = *a;
@@ -331,5 +337,12 @@ int main() {
   int c = 5, d = 3;
   swap(&c, &d);
   printf("c = %d, d = %d", c, d);
+  return 0;
+  */
+  // ขอบเขตตัวแปร
+  global_var = 5;
+  printf("%d\n", global_var);
+  set_var(10);
+  printf("%d", global_var);
   return 0;
 }
