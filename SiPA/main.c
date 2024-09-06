@@ -345,4 +345,12 @@ int main() {
   set_var(10);
   printf("%d", global_var);
   return 0;
+  // Local
+  int local_var = 5;
+  {
+    int local_var = 10;
+    printf("local_var1 = %d\n", local_var);
+  }
+  printf("local_var2 = %d", local_var);
+  return 0;
 }
