@@ -33,7 +33,7 @@ void count(){
   printf("%d", counter);
 }
 
-int main() {
+int main(int argc, char *argv[]) {
     /* ตัวแปร
     char myGreade;
     myGreade = 'A'
@@ -362,10 +362,13 @@ int main() {
   printf("local_var2 = %d", local_var);
   return 0;
   */
-  // ตัวแปร Static
+  /* ตัวแปร Static
   int i;
   for (i  0; < 5;i++){
     count();
   }
+  return 0;
+  */
+  // การรับค่าจาก Command Line
   return 0;
 }
