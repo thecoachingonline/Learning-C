@@ -25,6 +25,14 @@ void set_var(int n) {
   global_var = n;
 }
 
+//int counter = 0;
+void count(){
+//  int counter 0;
+  static int counter = 0;
+  counter++;
+  printf("%d", counter);
+}
+
 int main() {
     /* ตัวแปร
     char myGreade;
@@ -339,7 +347,7 @@ int main() {
   printf("c = %d, d = %d", c, d);
   return 0;
   */
-  // ขอบเขตตัวแปร
+  /* ขอบเขตตัวแปร
   global_var = 5;
   printf("%d\n", global_var);
   set_var(10);
@@ -352,5 +360,12 @@ int main() {
     printf("local_var1 = %d\n", local_var);
   }
   printf("local_var2 = %d", local_var);
+  return 0;
+  */
+  // ตัวแปร Static
+  int i;
+  for (i  0; < 5;i++){
+    count();
+  }
   return 0;
 }
