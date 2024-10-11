@@ -369,6 +369,6 @@ int main(int argc, char *argv[]) {
   }
   return 0;
   */
-  // การรับค่าจาก Command Line
+  // การรับค่าจาก Command Line (Main)
   return 0;
 }
