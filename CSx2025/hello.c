@@ -2,5 +2,5 @@
 
 int main(void)
 {
-    printf("สวัสดี, ชาวโลก\n");
+    printf("สวัสดี, ชาวโลก\n\r");
 }
